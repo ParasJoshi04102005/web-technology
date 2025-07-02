@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 2</title>
+
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+        .MoviesGrid {
+            display: grid;
+            grid-template-columns: repeat(3,  1fr);
+            gap: 20px;  
+            justify-content: center;
+        }
+        .movie {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            /* padding: 10px; */
+            width: 100%;
+            text-align: center;
+        }
+        .movie img {
+            width: 100%;
+            height: auto;
+        }
+        .movie h2 {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .movie p {
+            margin: 5px 0;
+        }
+        .movie button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .movie button:hover {
+            background-color: #218838;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="logo">
+        <img src="https://images.seeklogo.com/logo-png/45/1/bookmyshow-logo-png_seeklogo-452866.png?v=638666711700000000" alt="Book my Show logo" title="Book My Show" >
+        <h1>Online Movie Booking </h1>
+    </div>
+    <div class="MoviesGrid">
+        <div class="movie">
+            <img src="https://www.dummyimage.com/200x200/c1c1c1/c1c1c1" alt="Movie Poster" title="Kalki">
+            <h2>Kalki</h2>
+        </div>
+        <div class="movie">
+            <img src="https://www.dummyimage.com/200x200/222222/222222" alt="Movie Poster" title="Kalki 2">
+            <h2>Kalki 2</h2>
+        </div>
+    </div>
+    
+</body>
+</html>
